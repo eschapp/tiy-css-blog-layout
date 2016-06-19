@@ -7,23 +7,45 @@
 .container {
   display: -webkit-flex;
   display: flex;
+  margin: 0 0 0 100px;
 }
 
 .hero {
-  background: url("./images/houston.jpg");
+  background: url("./images/houston.jpg") no-repeat;
   background-size: cover;
   height: 80vh;
-
 }
-
-
 
 nav {
   width: 200px;
   border: 5px solid red;
   margin: 5px;
+  background: #999;
 }
 
+nav .logo-holder {
+  display: flex;
+  justify-content: center;
+}
+
+nav .circle {
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  background: #000;
+  width: 100px;
+  height: 100px;
+  margin-top: -60px;
+  display: flex;
+  justify-content: center;
+}
+
+nav .logo {
+  background: url("./images/TIY-Blog-Logo.png") no-repeat;
+  width: 80px;
+  height: 80px;
+  background-size: 80px;
+  margin-top: 10px;
+}
 
 .flex-column {
   -webkit-flex: 1;
