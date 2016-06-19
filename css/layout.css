@@ -1,15 +1,38 @@
-header {
+/** {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}*/
+
+.container {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.hero {
+  background: url("./images/houston.jpg");
+  background-size: cover;
+  height: 80vh;
 
 }
 
-content {
 
+
+nav {
+  width: 200px;
+  border: 5px solid red;
+  margin: 5px;
 }
 
-sidebar {
 
+.flex-column {
+  -webkit-flex: 1;
+          flex: 1;
+  border: 5px solid red;
+  margin: 5px;
 }
 
 footer {
-
+  border: 5px solid red;
+  height: 150px;
 }
