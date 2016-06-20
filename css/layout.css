@@ -1,8 +1,7 @@
-/** {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}*/
+h2 {
+  font: 30px Verdana, Geneva, sans-serif;
+  color: #333333;
+}
 
 .container {
   display: -webkit-flex;
@@ -13,19 +12,30 @@
 .hero {
   background: url("./images/houston.jpg") no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 500px;
 }
 
 nav {
   width: 200px;
-  border: 5px solid red;
   margin: 5px;
-  background: #999;
 }
 
-nav .logo-holder {
-  display: flex;
-  justify-content: center;
+nav h2, label {
+  font: 18px Verdana, Geneva, sans-serif;
+  color: #555555;
+}
+
+nav h2 {
+  line-height: .5;
+}
+
+nav p {
+padding: 10px 0;
+}
+
+nav p, input {
+  font: 14px Verdana, Geneva, sans-serif;
+  color: #777777;
 }
 
 nav .circle {
@@ -49,12 +59,53 @@ nav .logo {
 
 .flex-column {
   -webkit-flex: 1;
-          flex: 1;
-  border: 5px solid red;
+  flex: 1;
   margin: 5px;
+  padding: 10px;
+}
+
+.flex-column img {
+  border: none;
+  padding: 10px;
+}
+
+.by-line {
+  font: italic 16px Verdana, Geneva, sans-serif;
+  color: #222222;
+  line-height: 3;
+}
+
+.by-line a {
+  color: #3366ff;
+  text-decoration: none;
+}
+
+.by-line a:hover {
+  color: #99ccff;
+  text-decoration: none;
 }
 
 footer {
-  border: 5px solid red;
-  height: 150px;
+  height: 100px
+  color: #666666;
+}
+
+.follow-box {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #f1f1f1;
+    -webkit-box-shadow: -1px 5px 2px 0px rgba(196,196,196,1);
+    -moz-box-shadow: -1px 5px 2px 0px rgba(196,196,196,1);
+    box-shadow: -1px 5px 2px 0px rgba(196,196,196,1);
+}
+
+.follow-box p {
+  border-bottom: 1px solid #888888;
+  line-height: 2;
+  font: 16px Geneva, sans-serif;
+  color: #777777;
 }
